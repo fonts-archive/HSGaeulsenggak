@@ -1,36 +1,28 @@
-# HSGaeulsenggak
+# HS가을생각체
 
-[Visit Source](https://blog.naver.com/PostThumbnailView.nhn?isHttpsRedirect=true&blogId=hp0&logNo=221132470037&categoryNo=32&parentCategoryNo=0)
-
-&nbsp;
-
-### CSS
-
-```
-font-family: 'HSGaeulsenggak';
-```
+[배포처 바로가기](https://blog.naver.com/PostThumbnailView.nhn?isHttpsRedirect=true&blogId=hp0&logNo=221132470037&categoryNo=32&parentCategoryNo=0)
 
 &nbsp;
 
-### link
+## 웹 폰트
 
-```
+사용하는 `font-family`의 이름은 `HSGaeulsenggak`입니다.
+
+### HTML
+
+```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/HSGaeulsenggak/HSGaeulsenggak.css" type="text/css"/>
 ```
 
-&nbsp;
+### CSS `@Import`
 
-### import
-
-```
+```css
 @import url('https://cdn.jsdelivr.net/gh/fonts-archive/HSGaeulsenggak/HSGaeulsenggak.css');
 ```
 
-&nbsp;
+### CSS `@font-face`
 
-### font-face
-
-```
+```css
 @font-face {
     font-family: 'HSGaeulsenggak';
     font-weight: 100;
@@ -38,6 +30,7 @@ font-family: 'HSGaeulsenggak';
     font-display: swap;
     src: url('https://cdn.jsdelivr.net/gh/fonts-archive/HSGaeulsenggak/HSGaeulsenggak-Thin.woff2') format('woff2'),
          url('https://cdn.jsdelivr.net/gh/fonts-archive/HSGaeulsenggak/HSGaeulsenggak-Thin.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/HSGaeulsenggak/HSGaeulsenggak-Thin.otf') format('opentype'),
          url('https://cdn.jsdelivr.net/gh/fonts-archive/HSGaeulsenggak/HSGaeulsenggak-Thin.ttf') format('truetype');
 }
 @font-face {
@@ -47,13 +40,45 @@ font-family: 'HSGaeulsenggak';
     font-display: swap;
     src: url('https://cdn.jsdelivr.net/gh/fonts-archive/HSGaeulsenggak/HSGaeulsenggak-Regular.woff2') format('woff2'),
          url('https://cdn.jsdelivr.net/gh/fonts-archive/HSGaeulsenggak/HSGaeulsenggak-Regular.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/HSGaeulsenggak/HSGaeulsenggak-Regular.otf') format('opentype'),
          url('https://cdn.jsdelivr.net/gh/fonts-archive/HSGaeulsenggak/HSGaeulsenggak-Regular.ttf') format('truetype');
 }
 ```
 
 &nbsp;
 
-### 라이센스 본문
+## 다이나믹 서브셋
+
+웹폰트의 최적화를 위해 모던 브라우저에서는 글리프를 여러개로 나누어 필요한 부분만 동적으로 파싱하는 다이나믹 서브셋을 제공합니다. 폰트의 용량이 부담된다면 아래 코드를 사용하는 걸 추천합니다.
+
+### HTML
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/HSGaeulsenggak/subsets/HSGaeulsenggak-dynamic-subset.css" type="text/css"/>
+```
+
+### CSS
+
+```css
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/HSGaeulsenggak/subsets/HSGaeulsenggak-dynamic-subset.css');
+```
+
+&nbsp;
+
+## font-family
+
+어느 브라우저나 시스템 환경에서도 동일한 폰트가 적용되어야 한다면 아래와 같이 구성하는 걸 추천합니다. `-apple-system`과 `BlinkMacSystemFont`는 맥, `Segoe UI`는 윈도우, `Roboto`는 안드로이드의 기본 폰트입니다.
+
+
+```css
+font-family: "HSGaeulsenggak", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+```
+
+&nbsp;
+
+## 라이선스
+
+라이선스는 언제든지 변경될 수 있습니다. 변경사항을 확인하려면 배포처를 방문해 주세요.
 
 ```
 - 개인용, 상업용 전면 무료 사용 가능 

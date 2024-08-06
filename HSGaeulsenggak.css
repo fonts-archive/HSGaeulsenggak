@@ -5,6 +5,7 @@
     font-display: swap;
     src: url('https://cdn.jsdelivr.net/gh/fonts-archive/HSGaeulsenggak/HSGaeulsenggak-Thin.woff2') format('woff2'),
          url('https://cdn.jsdelivr.net/gh/fonts-archive/HSGaeulsenggak/HSGaeulsenggak-Thin.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/HSGaeulsenggak/HSGaeulsenggak-Thin.otf') format('opentype'),
          url('https://cdn.jsdelivr.net/gh/fonts-archive/HSGaeulsenggak/HSGaeulsenggak-Thin.ttf') format('truetype');
 }
 @font-face {
@@ -14,5 +15,6 @@
     font-display: swap;
     src: url('https://cdn.jsdelivr.net/gh/fonts-archive/HSGaeulsenggak/HSGaeulsenggak-Regular.woff2') format('woff2'),
          url('https://cdn.jsdelivr.net/gh/fonts-archive/HSGaeulsenggak/HSGaeulsenggak-Regular.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/fonts-archive/HSGaeulsenggak/HSGaeulsenggak-Regular.otf') format('opentype'),
          url('https://cdn.jsdelivr.net/gh/fonts-archive/HSGaeulsenggak/HSGaeulsenggak-Regular.ttf') format('truetype');
 }
